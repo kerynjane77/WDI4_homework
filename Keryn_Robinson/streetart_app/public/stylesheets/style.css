@@ -1,0 +1,39 @@
+
+body {
+
+  height: 100%;
+}
+
+#map {
+
+  height: 100%;
+}
+
+h1 {
+  font-family: Helvetica, Arial;
+
+}
+
+h2 {
+  font-family: Helvetica, Arial;
+  
+}
+
+li {
+  font-family: Helvetica, Arial;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:visited {
+    text-decoration: none;
+    color: light blue;
+/*    color: gray;*/
+}
+
+a:active {
+    color: black;
+}
