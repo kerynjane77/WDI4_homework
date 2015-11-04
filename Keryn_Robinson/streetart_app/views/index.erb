@@ -1,32 +1,24 @@
 
 <h1>footscray streetart</h1>
-
-<ul>
-  <li><a href="/">list of artworks</a></li>
-
-  <% art_sites.each do |art_site| %>
-
-    <li>
-      <%= link art_site.artist_name, "/?art_site_id=#{art_site.id}" %>
-    </li>
-
-  <% end %>
+<h3>list of artworks</h3>
 
 
+<% @art_sites.each do |art_site| %>
 
-</ul>
+  <p>
+      <%= art_site.artist_name %>  
 
-<!-- modify to art_sites image -->
+    <span>
+      <img id="artpic" src="<%= art_site.art_photo %>">
+    </span>
 
-<!-- <a href="/dishes/new">new dish</a>
+  </p>
+<% end %>
 
-  <% @dishes.each do |dish| %>
-  <a href="/dishes/<%= dish['id'] %>"><h2><%= dish['name'] %></h2></a>
 
-  <img src="<%= dish['image_url'] %>">
-  
-<% end %> -->
+<a href="/art_sites/new">add art site</a>
 
-<!-- # display map -->
-<!-- <div id="map"></div> -->
+<!-- display map -->
+
+<div id="map"></div>
 
